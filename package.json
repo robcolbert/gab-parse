@@ -1,0 +1,28 @@
+{
+  "name": "gab-parse",
+  "version": "0.1.0",
+  "description": "Library to convert @mentions and #hashtags into HTML links to Gab.com",
+  "main": "gab-parse.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/robcolbert/gab-parse.git"
+  },
+  "keywords": [
+    "gab",
+    "gab.com",
+    "mention",
+    "hashtag",
+    "parse",
+    "link",
+    "href"
+  ],
+  "author": "Gab AI, Inc.",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/robcolbert/gab-parse/issues"
+  },
+  "homepage": "https://github.com/robcolbert/gab-parse#readme"
+}
