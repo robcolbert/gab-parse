@@ -13,7 +13,7 @@ module.exports = (options) => {
       return `<a href="https://gab.com/${mention.slice(1)}">${mention}</a>`;
     },
     replaceHashtag: (tag) => {
-      return `<a href="https://gab.com/hash/${tag.slice(1)}">${tag}</a>`;
+      return `<a href="https://gab.com/tags/${tag.slice(1)}">${tag}</a>`;
     }
   };
 
@@ -30,7 +30,7 @@ module.exports = (options) => {
   return (text) => {
     var parseRegEx = /(^|\s)(#|@)\w{3,30}\b/g;
     var slugs = { };
-  
+
     var tags = text.match(parseRegEx);
     if (!tags || !tags.length) {
       return text;
@@ -43,7 +43,7 @@ module.exports = (options) => {
     .filter((tag) => {
       return !slugs[tag] && (slugs[tag] = true);
     });
-  
+
     tags.forEach((tag) => {
       switch (tag[0]) {
         case '@':
@@ -58,7 +58,7 @@ module.exports = (options) => {
           break;
       }
     });
-  
+
     return text;
   };
 };
